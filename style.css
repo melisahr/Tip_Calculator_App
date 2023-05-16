@@ -34,64 +34,82 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 2rem;
 }
 .left{ 
     width: 100%;
-}
-form{
     padding: 1rem;
 }
-.total{
-    margin-right: 1rem;
-    margin-bottom: 3rem;
+#bill, #people{
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--Very-light-grayish-cyan);
+    color: var(--dark-cyan);
+    text-align: right;
+    border: none;
+    border-radius: 0.2rem;
+}
+#bill:hover, #people:hover{
+    cursor: pointer;
 }
 .left_amount img{
-    position: absolute;
-    bottom: 53.5%;
-    right: 67%;
+    position: absolute;    
+    transform:translate(100%,100%);
 }
-.left_amount input, .guests input{
-    padding: 0.5rem 4rem;
-    background-color: var(--Grayish-cyan);
-    opacity: 30%;
-    outline: none;
-    border: none;
-}
-
-.selection button{
-    padding: 1rem 1.5rem;
-    margin: 1rem 0;
-}
-.selection input{
-    width: 70px;
-    padding: 1rem 0;
-}
-.right{
-    width: 100%;
+.left_mid button{
     background-color: var(--dark-cyan);
     color: var(--White);
-    padding: 5rem;  
-    margin: 1rem;  
+    font-weight: 700;
+    padding: 1rem 2rem;
+    margin: 0.5rem auto;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#custom{
+   width: 25%;
+   padding: 1rem 0;
+   border-radius: 0.5rem;
+   background-color: var(--Very-light-grayish-cyan);
+   color: var(--dark-cyan);
+   font-weight: 700;
+   text-align: center;
+   font-size: 1rem;
+}
+.left_bot img{
+    position: absolute;
+    transform: translate(100%,100%);
+}
+.right{
+    height: 45vh;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--dark-cyan);
+    color: var(--White);
+}
+.right h1{
+    font-size: 18px;
+    font-weight: 700;
+}
+.right p{
+    font-weight: 700;
+    font-size: 2em;
 }
 .top_right{
     display: flex;
     justify-content: space-between;
-}
-.top_right h1{
-    border: 1px solid black;
-    font-size: 18px;
-    font-weight: 700;
-}
-.top_right p{
-    font-size: 3rem;
+    align-content: center;
 }
 .bot_right{
     display: flex;
     justify-content: space-between;
-    border: 1px solid black;
+    align-content: center;
 }
-.bot_right h1{
-    font-size: 18px;
-    font-weight: 700;
+.right button{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 60%;
+    text-transform: uppercase;
+    color: var(--dark-cyan);
 }
