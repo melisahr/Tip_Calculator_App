@@ -155,6 +155,10 @@ input::placeholder{
     cursor: pointer;
     background-color: var(--Light-grayish-cyan);
 }
+.error{
+    border: 2px solid red;
+}
+  
 @media only screen and (max-width:768px){
     main{
         width: 100%;
